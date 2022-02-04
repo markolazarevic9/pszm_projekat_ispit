@@ -1,0 +1,70 @@
+.form {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+body {
+    background-color: rgba(0, 0, 0, 0.272);
+
+}
+.form label {
+    display: block;
+    padding: 5px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form input {
+    width: 80%;
+    padding: 20px;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    width: 60%;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+h1 {
+    border-bottom: 2px solid white;
+}
+
+#popUp {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.51);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#popUp h2 {
+    background-color: rgb(91, 91, 91);
+    padding: 20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#calculation {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 20px;
+    height: 200px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#calculation input {
+    text-align: center;
+}
+
+#calculation h4 {
+    display: inline-block;
+    width: 50px;
+}
+
