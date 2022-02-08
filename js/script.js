@@ -8,6 +8,7 @@ const btnCalc = document.getElementById("btnCalc");
 const popUp = document.getElementById("popUp");
 const numbers = document.getElementById("numbers");
 const numSum = document.getElementById("numSum");
+const hidden = document.getElementById("hiddenInput")
 
 let n1 = Math.floor(Math.random() * 6);
 let n2 = Math.floor(Math.random() * 6);
@@ -26,7 +27,7 @@ btn.addEventListener("click", function(e) {
         alert("Niste popunili sva polja")
     } else {
         let checkRegEx = checkName() == false || checkEmail() == false || checkPhone() == false;
-        if(checkRegEx) {
+        if(checkRegEx && hidden.value == "") {
           alert("Niste pravilno popunili polja")
         } else {
           popUp.style.visibility = "visible";
@@ -56,16 +57,6 @@ btnCalc.addEventListener("click", ()=> {
     location.reload();
   }
 })
-
-function clearInputs() {
-  popUp.style.visibility = "hidden";
-  nameInput.style.border = "none";
-  phoneInput.style.border = "none";
-  emailInput.style.border = "none";
-  nameInput.value = "";
-  phoneInput.value = "";
-  emailInput.value = "";
-}
 
 function checkName() {
   const reg1 = /^([A-Za-z\s']{5,35})$/;
